@@ -1,0 +1,45 @@
+/* !Assignment 01 */
+.d1, .d2, .d3{
+    display:inline-block;
+    padding:20px;
+    margin:auto  20px ;
+    background-color:#EAEAEA;
+    outline: 5px solid #000;
+    /* visibility: hidden; */
+}
+
+.d1{
+    border: 5px solid red;
+}
+
+.d2 {
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue green;
+}
+.d3 {
+    border-style: dashed;
+    border-width:5px;
+    border-color: red green blue yellow;
+}
+
+/* !Assignment 02 */
+.d-1, .d-2, .d-3 {
+    width:400px;
+    background-color: #EAEAEA;
+    padding:30px 15px;
+    margin:40px auto;
+    outline : 10px solid #EAEAEA;
+
+
+}
+.d-2 {
+    visibility:hidden;
+}
+
+.d-1 {
+    border-left: 5px solid red ;
+}
+.d-3 {
+    border-left: 5px solid red ;
+}

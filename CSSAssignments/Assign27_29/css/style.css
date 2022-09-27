@@ -1,0 +1,51 @@
+.parent {
+  text-align: center;
+  width: 1000px;
+  padding: 0;
+  display: none;
+}
+.parent div {
+  /* margin: 15px; */
+  background-color: #eee;
+  padding: 10px 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.line1 {
+  width: calc(100% -30px);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.line2,
+.line3,
+.line4 {
+  float: left;
+  margin-left: 15px;
+}
+.line2 {
+  width: calc((100% - 60px) / 3);
+}
+.line3 {
+  width: calc((100% - 45px) / 2);
+}
+.line4 {
+  width: calc((100% - 75px) / 4);
+}
+.clear {
+  clear: both;
+}
+div {
+  margin: 20px auto;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: #b7b7b7; /* Get The Background From Image */
+  color: black;
+}
+.one {
+  background-color: rgb(183 183 183 / 10%);
+}
+.two {
+  opacity: 0.1;
+}

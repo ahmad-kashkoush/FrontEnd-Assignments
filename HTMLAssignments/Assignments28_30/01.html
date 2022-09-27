@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignemtn#1</title>
+</head>
+<body>
+    <form action="">
+        <label for="username">username</label>
+        <input 
+        type="text" 
+        name="username" 
+        id="username"
+        placeholder="Enter your name"
+        autofocus
+        maxlength="20"
+        minlength="5"
+        >
+        <br>
+        <label for="Tocken"hidden>Tocken</label>
+        <input
+         type="text" 
+        name="Tocken" id="Tocken" value="b92f1fc2fce391ad7af633723afd3055" hidden>
+        <label for="Email">Email</label>
+        <input type="email" name="Email" id="Email" value=" o@o.com" readonly>
+      
+        <!-- !Checkboxes of skills -->
+        <h3>Skills you master</h3>
+        <input type="checkbox" name="Skills" id="Problem Solving" checked>
+        <label for="Problem Solving">Problem Solving</label>
+        <br>
+        <input type="checkbox" name="Skills" id="Logical Thinking">
+        <label for="Logical Thinking">Logical Thinking</label>
+        <br>
+        <input type="checkbox" name="Skills" id="Advanced Search">
+        <label for="Advanced Search">Advanced Search</label>
+        <br>
+        <input type="checkbox" name="Skills" id="Analysis">
+        <label for="Analysis">Analysis</label>
+        <br>
+        <input type="checkbox" name="Skills" id="Planning">
+        <label for="Planning">Planning</label>
+        <br>
+        <h3>Your fucken job</h3>
+        <input type="radio" name="job" id="Front-End Developer" checked>
+        <label for="Front-End Developer">Front-End Developer</label>
+        <br>
+        <input type="radio" name="job" id="Back-End Developer">
+        <label for="Back-End Developer">Back-End Developer</label>
+        <br>
+        <input type="radio" name="job" id="Business Analyst">
+        <label for="Business Analyst">Business Analyst</label>
+        <br>
+        <input type="radio" name="job" id="Manager">
+        <label for="Manager">Manager</label>
+        <br>
+        <input type="radio" name="jobaster" id="Scrum Master">
+        <label for="Scrum Master">Scrum Master</label>
+        <br>
+        <label for="lang">choose a fucken language</label>
+        <select name="languages" id="lang">
+            <optgroup label="PHP">
+                <option value="v5.0">v5.0</option>
+                <option value="v7.0">v7.0</option>
+                <option value="v8.0">v8.0</option>
+            </optgroup>
+            <optgroup label="Python">
+                <option value="v2.0">v2.0</option>
+                <option value="v3.0">v3.0</option>
+                <option value="v3.9">v3.9</option>
+            </optgroup>
+        </select>
+        <br>
+        <textarea 
+        name="brief"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Write Here why you want To learn programming"
+          ></textarea>
+        <input type="reset" value="Empty">
+        <input type="submit" value="send">
+    </form>
+    
+</body>
+</html>

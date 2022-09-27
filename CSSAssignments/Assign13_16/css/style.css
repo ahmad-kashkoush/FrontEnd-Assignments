@@ -1,0 +1,22 @@
+/* Assignment 1 */
+.parent .child .title {
+    color:red;
+}
+.parent .title {
+    color: blue;
+}
+.parent p , .title{
+    color: green;
+}
+
+/* Assignment 2 */
+.a-2 {
+    padding: 15px;
+    background-color: brown;
+    color: aliceblue;
+    font-size: 22px;
+    margin: 10px;
+    max-width: 400px;
+    max-height: 60px;
+    overflow: hidden;
+}

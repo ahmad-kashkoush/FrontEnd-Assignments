@@ -1,0 +1,21 @@
+/* Assignment-1 */
+.assign-1 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border: 2px solid green;
+  text-align: center;
+  padding: 20px;
+}
+p {
+  padding: inherit;
+  border: inherit;
+  background-color: rgb(228, 222, 222);
+}
+/* Assignment-2 */
+.assign-2-1,
+.assign-2-2,
+.assign-2-3 {
+  text-align: center;
+  padding: 10px;
+  font-size: 2em;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
