@@ -1,0 +1,43 @@
+#forest-ext-shadow-host{display: none;}
+*{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 10px;
+}
+h1{
+    background-color: rgb(224, 236, 10);
+    text-align: center;
+    
+}
+.assign-1{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    border-radius: 50%;
+    box-shadow: 5px 5px #2196f3,
+                 -5px -5px #e91e63;
+    text-align: center;
+    counter-increment: p;
+    position: relative;
+    
+ 
+}
+.assign-1::before{
+    content: "Element";
+    position: absolute;
+    top: 40px;
+    left: 20px;
+
+}
+.assign-1::after{
+    content: counter(p);
+    background-color: black;
+    border-radius: 50%;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: -27px;
+    left: 39px;
+
+}
+/* Assignment 2 */
