@@ -1,0 +1,84 @@
+#forest-ext-shadow-host{display: none;}
+*{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 10px;
+}
+h1{
+    background-color: rgb(224, 236, 10);
+    text-align: center;
+    
+
+}
+.assign-1{
+    width: 300px;
+    height: 60px;
+    background-color: #eee;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+}
+:empty{
+    background-color: #ff0000;
+
+}
+.assign-2{
+    background-color: #d4d4d4;
+    padding: 30px;
+    width:500px;
+    margin: auto;
+
+}
+.assign-2:first-letter{
+        color: #fff;
+        background-color: #ff0000;
+        padding: 15px 10px;
+        margin: 10px 11px 10px -45px;
+
+}
+.assign-3, .assign-4{
+    text-align: center;
+    background-color: #efefef;
+    margin: 10px auto;
+    padding: 15px;
+    width: 500px;
+    position: relative;
+}
+.assign-3{
+    border-left: 6px solid #e91e63;
+
+}
+.assign-3::after{
+    content: "";
+    display: inline-block;
+    border: 17px solid;
+    position: absolute;
+    top: 24%;
+    left: -34px;
+  
+    border-color:transparent #e91e63  transparent transparent;
+}
+.assign-3::before {
+    content: attr(data-person);
+    text-align: center;
+    background-color: #dddddd;
+    margin: 10px auto;
+    padding: 15px;
+    /* border-left: 6px solid #e91e63; */
+    position: absolute;
+    left: -156px;
+    top: -10px;
+}
+.assign-4{
+    counter-increment: p;
+    position: relative;
+
+}
+.assign-4::before{
+    content: counter(p);
+    position: absolute;
+    left: 1px;
+    padding: 14px;
+    top: 0;
+    color: #fff;
+    background-color: #ff0000;
+}
