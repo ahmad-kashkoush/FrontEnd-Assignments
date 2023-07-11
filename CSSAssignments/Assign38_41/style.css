@@ -41,3 +41,72 @@ h1{
 
 }
 /* Assignment 2 */
+.assign-2{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    background-color: #efefef;
+    border-radius: 5px 31px 5px 31px;
+    box-shadow: inset -1px -1px 15px  #333,
+                 inset 1px 1px 15px #333;
+}
+.assign-3{
+    width: 550px;
+    margin: auto;
+}
+.assign-3 .el{
+    float: left;
+    background-color: #eee;
+    padding: 15px;
+    text-align: center;
+
+}
+.circle{
+    border-radius: 50%;
+    background-color: #dddddd;
+    padding: 80px 61px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 28px;
+}
+.blue-cont{
+    background-color: #03a9f4;
+    color: #fff;
+    border-radius: 5px;
+    /* padding: 10px; */
+    font-size:22px;
+
+}
+.el-1{
+    position: relative;
+
+    margin-right: 40px;
+
+}
+.el-1::after{
+    content: "or";
+   
+    position: absolute;
+    right: -35px;
+    z-index: 2;
+    padding: 4px;
+    background-color: #03a9f4;
+    color: #fff;
+    border-radius: 50%;
+    top: 50%;
+}
+.el-2{
+    position: relative;
+}
+.el-2::before{
+    content: "";
+   
+    position: absolute;
+    background-color: #03a9f4;
+    top: 0;
+    left: -21px;
+    height: 324px;
+    width: 2px;
+
+
+}
