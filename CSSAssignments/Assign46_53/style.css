@@ -1,0 +1,197 @@
+* {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin: 20px;
+}
+.assign-1 {
+  width: 100px;
+  height: 100px;
+
+  margin: 20px auto;
+
+  /* Border and font  */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  color: #ff5b28;
+  border-left: 10px solid #03a9f4;
+  border-right: 10px solid #ff5b28;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+/* Assign-2 */
+.parent-assign-2,
+.parent-assign-3,
+.parent-assign-4,
+.parent-assign-5 {
+  width: 600px;
+  height: 300px;
+  padding: 10px;
+  background-color: #eee;
+  margin: auto;
+}
+.parent-assign-2 {
+  /* flex */
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-around;
+}
+.parent-assign-2 div,
+.parent-assign-3 div,
+.parent-assign-4 div,
+.parent-assign-5 div {
+  background-color: #ff5b28;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.parent-assign-2 div,
+.parent-assign-3 div {
+  width: 30%;
+}
+/* Assignment 3 */
+.parent-assign-3 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.parent-assign-3 .one {
+  order: 6;
+  align-self: flex-end;
+}
+.parent-assign-3 .three {
+  order: 0;
+  align-self: flex-start;
+}
+.parent-assign-3 .six {
+  order: -1;
+}
+.parent-assign-3 .two {
+  order: 3;
+}
+
+.parent-assign-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.parent-assign-4 div {
+  flex-basis: 30%;
+}
+.parent-assign-4 .one,
+.parent-assign-4 .three {
+  align-self: flex-end;
+}
+.parent-assign-4 .two {
+  width: 50%;
+}
+
+.parent-assign-5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.parent-assign-5 div {
+  width: 20%;
+  height: 50%;
+}
+
+.parent-assign-5 .four {
+  order: -1;
+  align-self: flex-end;
+}
+.parent-assign-5 .two {
+  align-self: flex-end;
+}
+/* Assignment 6 */
+:root {
+  --main-padding: 10px;
+  --child-color: #dddddd;
+}
+.page {
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 5px;
+}
+
+.header,
+.main-area,
+.footer {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.header ul li,
+.logo, .footer {
+  padding: var(--main-padding);
+}
+.header ul {
+  display:flex;
+
+  
+  background-color: var(--child-color);
+  padding: var(--main-padding);
+  flex-grow: 3;
+  list-style: none;
+  justify-content: flex-end;
+}
+.header, .footer {
+  justify-content: space-between;
+  
+}
+
+.logo,
+.content,
+.sidebar, .footer {
+  background-color: var(--child-color);
+}
+.logo {
+  margin-right: 10px;
+  padding: var(--main-padding);
+  display: flex;
+  align-items: center;
+  
+}
+
+
+
+
+
+
+
+
+
+
+.main-area{
+  justify-content: space-between;
+  height: 500px;
+}
+.content, .sidebar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content{
+  flex-grow:1;
+  margin-right:10px;
+
+}
+.sidebar{
+  padding: 15px;
+}
+
