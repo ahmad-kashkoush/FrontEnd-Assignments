@@ -1,0 +1,198 @@
+*{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #e2b714;
+    color: #333;
+}
+/* Assignment-1 */
+.grid-assign-1 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    /* Grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-gap: 15px;
+    
+  }
+  .grid-assign-1 div{
+    counter-increment:cnt;
+    padding: 10px;
+    background-color: #607d8b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-assign-1 div::before{
+    content: "Element "  counter(cnt);
+  }
+  /* Assignment 2 */
+  .layout-assign-2{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:auto 1fr auto;
+    
+
+
+  }
+  .layout-assign-2 *{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+ 
+  }
+  header{
+    background-color: #03a9f4;
+    grid-area: 1/1/1/4;
+  }
+  header::after{
+    content: "Header";
+    color: #fff;
+  }
+  section{
+    background-color: #ff5722;
+    grid-area: 2/1/3/3;
+  }
+  section::after{
+    content: "section";
+    color: #fff;
+  }
+  aside{
+    background-color: #607d8b;
+    grid-area: 2/3/3/4;
+  }
+  aside::after{
+    content: "aside";
+    color: #fff;
+  }
+  footer{
+    background-color: #009688;
+    grid-area: 3/1/3/4;
+  }
+  footer::after{
+    content: "Footer";
+    color: #fff;
+  }
+
+  /* Assignment 3 */
+  .grid-assign-3 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    /* Grid */
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows:1fr auto;
+    grid-gap: 15px;
+
+  }
+  .grid-assign-3 div{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Assignment 4 */
+  .grid-assign-4 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    /* grid  */
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(6, 1fr);
+    grid-template-areas: 
+    "eight eight eight"
+    "two two three"
+    "four five five"
+    "six five five"
+    "seven five five"
+    "one one one";
+    grid-gap: 15px;
+  }
+  .grid-assign-4 div{
+    background-color: #2196f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+  }
+  .eight{
+    grid-area: eight;
+  }
+  
+  .one{
+    grid-area:one;
+  }
+  .two{
+    grid-area:two;
+  }
+  
+  .three{
+    grid-area:three;
+  }
+  .four{
+    grid-area:four;
+  }
+  .five{
+    grid-area:five;
+  }
+  .six{
+    grid-area:six;
+  }
+  
+  .grid-assign-5 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    color: #fff;
+
+    /* Grid Styling */
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:auto 1fr auto;
+   
+  }
+  .grid-assign-5 div{
+    background-color: #e91e63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+.grid-assign-5 .two{
+    grid-area:1/2/2/3;
+}
+.grid-assign-5 .one{
+    grid-column: 1/ span 1;
+    grid-row:1 /span 1;   
+  }
+  .grid-assign-5 .three{
+    grid-area: 3/1/4/2;
+  }
+  .grid-assign-5 .four{
+    grid-area:3/2/4/3;
+  }
