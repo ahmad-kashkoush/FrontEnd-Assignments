@@ -1,0 +1,162 @@
+:root {
+  --assign-1-color: #ff5722;
+  --assign2-color: #009688;
+  --main-assign3-color: #607d8b;
+  --secondary-assign3-color: #000000;
+}
+* {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.title {
+  text-align: center;
+  padding: 10px;
+  margin: 50px 0;
+
+  background-color: #e2b714;
+  color: #333;
+}
+/* Assign 1 */
+.assign-1 {
+  margin: 30px auto;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: var(--assign-1-color);
+  color: #fff;
+  position: relative;
+}
+
+.assign-1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  background-color: var(--assign-1-color);
+  transform: scale(1.1, 1.2) skew(29deg, 13deg);
+  z-index: -1;
+}
+.assign-1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 13px;
+  right: 0;
+  background-color: var(--assign-1-color);
+  transform: scale(1.1, 1.2) skew(-29deg, -13deg);
+  z-index: -1;
+}
+/* Assign 2 */
+
+.assign-2 {
+  margin: 30px auto;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: var(--assign2-color);
+  color: #fff;
+  position: relative;
+}
+.assign-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--assign2-color);
+  z-index: -1;
+  transform: scale(1.1, 1) skew(14deg);
+}
+.assign-2::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  background-color: var(--assign2-color);
+  top: 0;
+  left: -59px;
+  transform: scale(1.1, 1) skew(14deg);
+}
+/* Assignment 3 */
+.assign-3 {
+  background-color: var(--main-assign3-color);
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  border-bottom: 10px solid var(--secondary-assign3-color);
+}
+.assign-3::after {
+  content: "Elzero";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+}
+
+.assign-3::before {
+  content: "";
+  position: absolute;
+  top: -68px;
+  left: 24px;
+  width: 72%;
+  height: 71%;
+  background-color: var(--secondary-assign3-color);
+  transform: rotate(-45deg);
+  /* border: 10px solid #fff; */
+  /* border-color: transparent #fff #fff; */
+  border-left: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+}
+
+.assign-5 {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform .5s ease;
+}
+.assign-5-parent{
+  
+  perspective: 800px;
+}
+.assign-5::before,
+.assign-5::after {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  
+}
+.assign-5:hover {
+  transform: rotateX(180deg);
+  /* transform: rotateY(180deg); */
+}
+.assign-5::before {
+  content: "Front";
+  background-color: #ea2264;
+}
+.assign-5::after {
+  content: "Back";
+  background-color: #1692fc;
+  transform:rotateX(180deg) ;
+  /* transform:rotateY(180deg) ; */
+  backface-visibility: hidden;
+
+}
