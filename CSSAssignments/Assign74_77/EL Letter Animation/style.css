@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  gap: 20px;
+}
+.E,
+.L {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  display: flex;
+  position: relative;
+}
+.col {
+  background-color: #333;
+  width: 20%;
+  height: 100%;
+}
+.lines {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.row {
+  background-color: #333;
+  width: 100%;
+  height: 15%;
+}
+.L {
+  align-items: flex-end;
+}
+
+.L::before,
+.E::after {
+  content: "";
+  background-color: #fea604;
+  width: 10%;
+  height: 10%;
+
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.L::before {
+  animation: stone1 2s infinite linear alternate;
+}
+.L:hover::before {
+  animation-play-state: paused;
+}
+.E::after{
+    animation: stone2 4s infinite linear ;
+}
+.E:hover::after {
+    animation-play-state: paused;
+}
+@keyframes stone1 {
+  25% {
+    transform: translate(-170px, 0px);
+  }
+  50% {
+    transform: translate(-170px, -170px);
+  }
+  75% {
+    transform: translate(-170px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes stone2 {
+    10%{
+        transform: translate(-170px, 0px);
+    }
+    20%{
+        transform:translate(-170px, -85.6px);
+
+    }
+    30%{
+        transform:translate(10px, -85.6px);
+
+    }
+    40%{
+        transform:translate(-170px, -85.6px);
+
+    }
+    50%{
+        transform:translate(-170px, -170px);
+
+    }
+    60%{
+        transform:translate(10px,-170px);
+
+    }
+    70%{
+        transform:translate(-170px, -170px);
+    }
+    80%{
+        transform:translate(-170px, 0px);
+
+    }
+    90%{
+        transform:translate(0px, 0px);
+    }
+
+   
+}
