@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AK | Template 1</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <!-- Header [] -->
@@ -12,6 +14,11 @@
       <div class="container">
         <div class="logo"></div>
         <nav>
+          <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
           <ul>
             <li><a href="#">services</a></li>
             <li><a href="#">Portfolio</a></li>
@@ -22,11 +29,15 @@
       </div>
     </header>
     <!-- Welcome  or home part [] -->
-    <section id="home">
-      <h1>Hello There</h1>
-      <p>We Are AK- Competitive Programming Agency code Templates</p>
-    </section>
-    <section class="features">
+    
+      <div class="landing">
+        <div class="intro-text">
+          <h1>Hello There</h1>
+          <p>We Are AK- Competitive Programming Agency code Templates</p>
+        </div>
+      </div>
+
+    <section id="features">
       <div class="container">
         <div>
         <i class="fas fa-magic fa-3x"></i>
@@ -55,42 +66,58 @@
       </div>
     </section>
     <section id="services">
-      <div>
-        <span>logo</span>
+      <h1 class="section-heading">Services</h1>
+      <p>Dont't be busy, be productive</p>
+      <div class="container">
+
+        <div class="service">
+         <i class="fas fa-magic fa-3x"></i>
+          <h3>Tell Us Your Ideas</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut lab
+        </p>
+      </div>
+      <div class="service">
+       <i class="fas fa-magic fa-3x"></i>
         <h3>Tell Us Your Ideas</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut lab
         </p>
       </div>
-      <div>
-        <span>logo</span>
+      <div class="service">
+       <i class="fas fa-magic fa-3x"></i>
         <h3>Tell Us Your Ideas</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut lab
         </p>
       </div>
-      <div>
-        <span>logo</span>
+      <div class="service">
+       <i class="fas fa-magic fa-3x"></i>
         <h3>Tell Us Your Ideas</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut lab
         </p>
       </div>
-      <div>
-        <span>logo</span>
-        <h3>Tell Us Your Ideas</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut lab
-        </p>
-      </div>
+    </div>
     </section>
     <section id="portfollio">
-      <h3>portfollio</h3>
-      <div>
+      <h1 class="section-heading">portfollio</h1>
+      <p>show You Work</p>
+      <div class="container">
+
+        <div class="port-card">
+          <div class="product-img"></div>
+          <h3>Project Here</h3>
+          <p>
+            My creative ability is very difficult to measure because it can
+          manifest in so many surprising and.
+        </p>
+      </div>
+      <div class="port-card">
         <div class="product-img"></div>
         <h3>Project Here</h3>
         <p>
@@ -98,7 +125,7 @@
           manifest in so many surprising and.
         </p>
       </div>
-      <div>
+      <div class="port-card">
         <div class="product-img"></div>
         <h3>Project Here</h3>
         <p>
@@ -106,25 +133,20 @@
           manifest in so many surprising and.
         </p>
       </div>
-      <div>
-        <div class="product-img"></div>
-        <h3>Project Here</h3>
-        <p>
-          My creative ability is very difficult to measure because it can
-          manifest in so many surprising and.
-        </p>
-      </div>
+    </div>
     </section>
     <section id="about">
-      <h3>About</h3>
+      <h1 class="section-heading">About</h1>
       <p>less is more work</p>
+      <div class="container">
       <div class="about-img"></div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo neque voluptate tempora velit cum non, fuga vitae architecto delectus sed maxime rerum impedit aliquam obcaecati, aut excepturi iusto laudantium!</p>
+      <p class="about-p p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo neque voluptate tempora velit cum non, fuga vitae architecto delectus sed maxime rerum impedit aliquam obcaecati, aut excepturi iusto laudantium!</p>
+      <p class="about-p p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, sapiente. Velit iure exercitationem dolores nesciunt dolore. Eum officiis dolorum hic voluptate quaerat minima, similique inventore esse, alias, sed quo officia?</p>
       <hr class="small-green-line">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, sapiente. Velit iure exercitationem dolores nesciunt dolore. Eum officiis dolorum hic voluptate quaerat minima, similique inventore esse, alias, sed quo officia?</p>
+    </div>
     </section>
     <section id="contact">
-      <h3>Contact</h3>
+      <h1 class="section-heading">Contact</h1>
       <p>We are born to create</p>
       <h3 class="con">Feel free to drop us a line at:</h3>
       <a href="#" class="mail">leonagency@mail.com </a>
@@ -132,6 +154,6 @@
     </section>
     <footer>
       <p>© 2021 <span>Leon</span> All Right Reserved</p>
-    </footer>
+    </footer> -->
   </body>
 </html>
